@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUMI Says</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">YUMI SAYS</header>
+    <div>
+        <div onclick="panelClicked(event.currentTarget)" class="panel top-left-panel"></div>
+        <div onclick="panelClicked(event.currentTarget)" class="panel top-right-panel"></div>
+    </div>
+    <div>
+        <div onclick="panelClicked(event.currentTarget)" class="panel bottom-left-panel"></div>
+        <div onclick="panelClicked(event.currentTarget)" class="panel bottom-right-panel"></div>
+    </div>
+    <div id="star"></div>
+
+    <button id="startBtn" onclick="startFlashing()">START</button>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

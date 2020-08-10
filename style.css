@@ -1,0 +1,111 @@
+body {
+    background-image: url(https://media1.tenor.com/images/8e46150f790fbefe438d9c2767c32ad1/tenor.gif?itemid=15673753);
+    text-align: center;
+    margin-top: 150px;
+
+}
+
+
+
+.panel {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.panel:hover {
+    border: 1px solid grey;
+    box-shadow: inset 0px 0px 0px 3px grey;
+    box-sizing: border-box;
+}
+
+.top-left-panel {
+    border-top-left-radius: 100%;
+    background-color: #3B55CE;
+}
+
+.top-right-panel {
+    border-top-right-radius: 100%;
+    background-color: #E847AE;
+}
+
+.bottom-left-panel {
+    border-bottom-left-radius: 100%;
+    background-color: blueviolet;
+}
+
+.bottom-right-panel {
+    border-bottom-right-radius: 100%;
+    background-color: #FF9472;
+}
+
+
+#startBtn {
+    display: grid;
+    background-color: hotpink;
+
+}
+
+
+
+#star {
+    margin: 50px 0;
+    position: relative;
+    display: inline-block;
+    top: -290px;
+    left: 6px;
+    color: rgb(27, 25, 27);;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid rgb(27, 25, 27);;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+ }
+  #star:before {
+    border-bottom: 80px solid rgb(27, 25, 27);;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: inline-block;
+    content: '';
+    transform: rotate(-35deg);
+
+  }
+  #star:after {
+    position: absolute;
+    display: inline-block;
+    color: rgb(27, 25, 27);;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid rgb(27, 25, 27);;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+    
+  }
+
+
+
+  .active {
+      background-color: rgba(255, 255, 255, 0.699);
+  }
+
+  .header {
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 15px;
+    color: hotpink;
+  }
+  @media (min-width: 600px) {
+      body {
+
+      }
+  }
